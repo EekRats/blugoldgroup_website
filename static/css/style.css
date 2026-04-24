@@ -62,14 +62,19 @@ footer > div {
     margin: 0px 15px 0px 15px;
 }
 
-/* container defaults */
-body > div {
+body > div,
+body > header,
+body > nav,
+body > main,
+body > section,
+body > footer {
     margin: auto;
     background-color: var(--foreground);
     border: 3px solid var(--border);
     width: 100%;
     max-width: 900px;
 }
+
 
 .invis-div {
     border: none;
@@ -102,6 +107,7 @@ body > div {
 /* Fastfetch Thing */
 #fastfetch-thing {
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: auto auto;
 }
 

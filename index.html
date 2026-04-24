@@ -11,21 +11,17 @@
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
     <body>
-        <!-- Header -->
-        <div id="website-header">
+        <header id="website-header">
             <h1>Blugold Cybersecurity</h1>
-        </div>
-        <!-- Navigation Menu -->
-        <div id="button-container" class="invis-div">
-            <button><a href="./about">About Us</a></button>
-            <!-- <button><a href="./join">Join Our Club</a></button> -->
-            <button><a href="./calendar">Meeting Calendar</a></button>
-            <button><a href="./discord">Join the Discord</a></button>
-        </div>
-        <!-- Logo & Info -->
-        <div id="fastfetch-thing" style="display:grid; flex-wrap: wrap;">
+        </header>
+        <nav id="button-container" class="invis-div" aria-label="Main navigation">
+            <a href="./about">About Us</a>
+            <a href="./calendar">Meeting Calendar</a>
+            <a href="./discord">Join the Discord</a>
+        </nav>
+        <section id="fastfetch-thing">
             <!-- <img id="logo" src="./img/logo.webp"/> -->
-            <img id="logo" src="/static/images/ascii-logo.png"/>
+            <img id="logo" src="/static/images/ascii-logo.png" alt="ASCII art of the Blugold Group logo"/>
             <!-- fastfetch esque view -->
             <div id="right-panel">
                 <div class="output-line">
@@ -35,25 +31,17 @@
                     <span class="category-label">University: </span><span>University of Wisconsin Eau Claire</span>
                 </div>
                 <div class="output-line">
-                    <span class="category-label">Competitions Won: </span><span>3</span>
+                    <span class="category-label">Sponsors/Supporters: </span><span>Obscura Nexus (donated switches)</span>
                 </div>
                 <div class="output-line">
-                    <span class="category-label">Sponsors: </span><span>Looking...</span>
-                </div>
-                <div class="output-line">
-                    <span class="category-label">Skillsets: </span><span>Lock Picking, CTI, Cryptography, Linux, Networking, etc.</span>
-                </div>
-                <div class="output-line">
-                    <span class="category-label">Research: </span><span>Active</span> 
+                    <span class="category-label">Skillsets: </span><span>Lock Picking and Physical Security, CTI, Cryptography, Linux, Networking, much more!</span>
                 </div>
             </div>
-        </div>
-        <!-- Projects Title -->
-        <div id="projects-header">
+        </section>
+        <section id="projects-header">
             <h2>Projects</h2>
-        </div>
-        <!-- Projects List -->
-        <div id="projects" class="invis-div">
+        </section>
+        <section id="projects" class="invis-div">
             <div>
                 <h2>Kiwi Tracker</h2>
                 <h3>Food Delivery Robot Signal Triangulation</h3>
@@ -69,38 +57,35 @@
                 <h3>CLI Cryptography Suite</h3>
                 <a href="https://github.com/Blugold-Group/bletchley">GitHub</a>
             </div>
-        </div>
-        <!-- Footer -->
-        <div>
-            <footer>
-                <div>
-                    <span><a href="./about">About</a></span>
-                </div>
+        </section>
+        <footer>
+            <div>
+                <span><a href="./about">About</a></span>
+            </div>
 
-                <span class="footer-item-seperator">|</span>
+            <span class="footer-item-seperator">|</span>
 
-                <!-- <div>
-                    <span><a href="./join">Join</a></span>
-                </div>
+            <!-- <div>
+                <span><a href="./join">Join</a></span>
+            </div>
 
-                <span class="footer-item-seperator">|</span> -->
+            <span class="footer-item-seperator">|</span> -->
 
-                <div>
-                    <span><a href="./discord">Discord</a></span>
-                </div>
+            <div>
+                <span><a href="./discord">Discord</a></span>
+            </div>
 
-                <span class="footer-item-seperator">|</span>
+            <span class="footer-item-seperator">|</span>
 
-                <div>
-                    <span><a href="./github">GitHub</a></span>
-                </div>
+            <div>
+                <span><a href="./github">GitHub</a></span>
+            </div>
 
-                <span class="footer-item-seperator">|</span>
+            <span class="footer-item-seperator">|</span>
 
-                <div>
-                    <span><a href="./calendar">Calendar</a></span>
-                </div>
-            </footer>
-        </div>
+            <div>
+                <span><a href="./calendar">Calendar</a></span>
+            </div>
+        </footer>
     </body>
 </html>
