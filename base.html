@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.4/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="/static/css/cards.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <title>{% block title %}Blugold Group{% endblock %}</title>
+    {% block style %}{% endblock %}
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="/"><img src="/static/images/logo_with_words.png" alt="Blugold Group Logo"></a></li>
+            </ul>
+            <ul>
+                <li><a href="/discord">Discord</a></li>
+                <li><a href="https://github.com/Blugold-Group">Github</a></li>
+                <li><a href="https://outlook.office365.com/owa/calendar/a095948822b745e2a38b88d2198c9f63@uwec.edu/c37a0791f8c34c17a13f33cea666f5df14002655777961391635/calendar.html">Calendar</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+        {% block content %}
+        {% endblock %}
+
+    <footer style="padding:20px; text-align:center; font-size:0.9em; color:#888;">
+        The Blugold Group | <a href="https://uwec.edu">University of Wisconsin - Eau Claire</a>
+    </footer>
+
+    </main>
+</body>
+</html>
